@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Департамент лесного хозяйства</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" id="theme-link" />
+</head>
+<body>
+  <!-- Верхняя тонкая панель -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <a href="sitemap.html">Карта сайта</a>
+      <button class="top-bar-btn" id="accessibilityToggleTop" aria-pressed="false" aria-label="Включить версию для слабовидящих">Версия для слабовидящих</button>
+      <a href="login.html">Войти</a>
+    </div>
+  </div>
+
+  <!-- Основная шапка -->
+ <header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">ЛесХоз</a>
+
+    <!-- Контакты в шапке -->
+    <div class="contacts-top">
+      <span class="contact-phone">+7 (495) 123-45-67</span>
+      <span class="contact-email">
+        <a href="mailto:info@leshoz.gov.ru">info@leshoz.gov.ru</a>
+      </span>
+    </div>
+
+    <!-- Бургер -->
+    <button class="nav-toggle" aria-label="Открыть меню" id="navToggle">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Нижняя навигационная панель под шапкой -->
+<nav class="main-nav closed" id="mainNav">
+  <div class="container">
+    <ul class="nav-list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#news">Новости</a></li>
+      <li><a href="#articles">Статьи</a></li>
+
+      <li class="dropdown">
+        <a href="404.html" class="dropdown-btn">Деятельность</a>
+        <ul class="dropdown-content">
+          <li><a href="404.html">Планы работ</a></li>
+          <li><a href="404.html">Лесные аукционы</a></li>
+          <li><a href="404.html">Школьные и студенческие лесничества</a></li>
+          <li><a href="404.html">Отчёты и доклады о деятельности</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Департамент лесного хозяйства</h1>
+      <p>Сохраняем и приумножаем богатства наших лесов</p>
+      <a href="#articles" class="btn-primary">Читать статьи</a>
+    </div>
+    <style>
+      .hero {
+        background: url('img/hero.jpg') center/cover no-repeat;
+        color: #ffffff;
+        text-align: center;
+        padding: 6rem 1rem;
+        position: relative;
+      }
+      .hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </section>
+
+  <main>
+    <div class="container">
+      <!-- Новости -->
+      <section id="news" class="section-news">
+        <h2>Последние новости</h2>
+        <div class="news-grid">
+          <!-- Новость 1 -->
+          <article class="news-item">
+            <img src="img/news1.jpg" alt="Новый питомник" loading="lazy" />
+            <h3>Новый питомник для сосен открылся в регионе</h3>
+            <p>В рамках федеральной программы по восстановлению лесов на территории области открыт современный лесной питомник...</p>
+            <a href="#" class="read-more">Читать далее →</a>
+          </article>
+
+          <!-- Новость 2 -->
+          <article class="news-item">
+            <img src="img/news2.jpg" alt="Высадка 10000 саженцев" loading="lazy" />
+            <h3>Проведена высадка 10 000 саженцев дуба</h3>
+            <p>Сотрудники департамента совместно с волонтёрами высадили новые деревья в охраняемой зоне...</p>
+            <a href="#" class="read-more">Читать далее →</a>
+          </article>
+
+          <!-- Новость 3 -->
+          <article class="news-item">
+            <img src="img/news3.jpg" alt="Мобильное приложение" loading="lazy" />
+            <h3>Запуск мобильного приложения для учёта лесных пожаров</h3>
+            <p>Представлен первый в регионе инструмент, позволяющий оперативно уведомлять службы о возгорании...</p>
+            <a href="#" class="read-more">Читать далее →</a>
+          </article>
+
+          <!-- Новость 4 -->
+          <article class="news-item">
+            <img src="img/news4.jpg" alt="Новое оборудование" loading="lazy" />
+            <h3>Новое оборудование для лесозаготовок</h3>
+            <p>Департамент закупил экологичные машины для безопасного вывоза сырья без ущерба экологии...</p>
+            <a href="#" class="read-more">Читать далее →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Блок Статьи-->
+      <section id="articles" class="section-articles">
+        <h2>Статьи</h2>
+        <div class="articles-grid">
+          <!-- статья 1 -->
+          <article class="article-card">
+            <img src="img/article1.jpg" alt="Сосна" loading="lazy" />
+            <div class="article-info">
+              <h3><a href="articles/article1.html">Охрана озонового слоя и лесная экология</a></h3>
+              <p>Как леса влияют на состав атмосферы и сохраняют климатическую стабильность...</p>
+              <a href="articles/article1.html" class="read-more">Читать далее →</a>
+            </div>
+          </article>
+
+          <!-- Статья 2 -->
+          <article class="article-card">
+            <img src="img/article2.jpg" alt="Дикая природа" loading="lazy" />
+            <div class="article-info">
+              <h3><a href="articles/article2.html">Биоразнообразие в лесах: виды растений и журавлей</a></h3>
+              <p>Изучаем видовое разнообразие флоры и фауны лесного пояса...</p>
+              <a href="articles/article2.html" class="read-more">Читать далее →</a>
+            </div>
+          </article>
+
+          <!-- Статья 3 -->
+          <article class="article-card">
+            <img src="img/article3.jpg" alt="Лесной пожар" loading="lazy" />
+            <div class="article-info">
+              <h3><a href="articles/article3.html">Как предотвратить лесные пожары: лучшие практики</a></h3>
+              <p>Современные методы мониторинга и профилактики возгораний в лесах...</p>
+              <a href="articles/article3.html" class="read-more">Читать далее →</a>
+            </div>
+          </article>
+
+          <!-- Статья 4 -->
+          <article class="article-card">
+            <img src="img/article4.jpg" alt="Сохранение природы" loading="lazy" />
+            <div class="article-info">
+              <h3><a href="articles/article4.html">Реинтродукция редких видов растений</a></h3>
+              <p>Проекты по восстановлению исчезающих видов в заповедниках региона...</p>
+              <a href="articles/article4.html" class="read-more">Читать далее →</a>
+            </div>
+          </article>
+
+          <!-- Статья 5 -->
+          <article class="article-card">
+            <img src="img/article5.jpg" alt="Водный баланс" loading="lazy" />
+            <div class="article-info">
+              <h3><a href="articles/article5.html">Воздействие вырубки лесов на водный баланс</a></h3>
+              <p>Изучаем, как обезлесение влияет на гидрологические циклы и местные экосистемы...</p>
+              <a href="articles/article5.html" class="read-more">Читать далее →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Блок Контакты -->
+      <section id="contacts" class="section-contacts">
+        <h2>Контакты</h2>
+        <div class="contacts-grid">
+          <div class="contact-item">
+            <h3>Адрес</h3>
+            <p>г. Москва, ул. Лесная, д. 10</p>
+          </div>
+          <div class="contact-item">
+            <h3>Телефон</h3>
+            <p>+7 (495) 123-45-67</p>
+          </div>
+          <div class="contact-item">
+            <h3>E-mail</h3>
+            <p><a href="mailto:info@leshoz.gov.ru">info@leshoz.gov.ru</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>Соцсети</h3>
+            <p>
+              <a href="404.html">Facebook</a> |
+              <a href="404.html">Instagram</a> |
+              <a href="404.html">VK</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2025 Департамент лесного хозяйства</p>
+      <p>
+        <a href="index.html">Главная</a> |
+        <a href="sitemap.html">Карта сайта</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
