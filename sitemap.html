@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Карта сайта — Департамент лесного хозяйства</title>
+  <link rel="stylesheet" href="css/style.css" id="theme-link">
+</head>
+<body>
+  <!-- Верхняя панель -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <a href="sitemap.html">Карта сайта</a>
+      <button class="top-bar-btn" id="accessibilityToggleTop">Версия для слабовидящих</button>
+      <span id="profile-nav"></span>
+    </div>
+  </div>
+
+  <!-- ====== Основная шапка ====== -->
+ <header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">ЛесХоз</a>
+
+    <!-- Контакты в шапке -->
+    <div class="contacts-top">
+      <span class="contact-phone">+7 (495) 123-45-67</span>
+      <span class="contact-email">
+        <a href="mailto:info@leshoz.gov.ru">info@leshoz.gov.ru</a>
+      </span>
+    </div>
+
+    <!-- Бургер -->
+    <button class="nav-toggle" aria-label="Открыть меню" id="navToggle">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Навигация под шапкой -->
+<nav class="main-nav closed" id="mainNav">
+  <!-- <div class="container"> -->
+    <ul class="nav-list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="index.html#news">Новости</a></li>
+      <li><a href="index.html#articles">Статьи</a></li>
+
+      <li class="dropdown">
+        <a href="404.html" class="dropdown-btn">Деятельность</a>
+        <ul class="dropdown-content">
+          <li><a href="404.html">Планы работ</a></li>
+          <li><a href="404.html">Лесные аукционы</a></li>
+          <li><a href="404.html">Школьные и студенческие лесничества</a></li>
+          <li><a href="404.html">Отчёты и доклады о деятельности</a></li>
+        </ul>
+      </li>
+
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+  <!-- </div> -->
+</nav>
+
+  <!-- Main content -->
+  <main>
+    <div class="container">
+      <section class="section-sitemap">
+        <h2>Карта сайта</h2>
+        <ul class="sitemap-struct">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="index.html#news">Новости</a>
+          </li>
+          <li>
+            <a href="index.html#articles">Статьи</a>
+            <ul>
+              <li><a href="articles/article1.html">Охрана озонового слоя и лесная экология</a></li>
+              <li><a href="articles/article2.html">Биоразнообразие в лесах: виды растений и журавлей</a></li>
+              <li><a href="articles/article3.html">Как предотвратить лесные пожары: лучшие практики</a></li>
+              <li><a href="articles/article4.html">Реинтродукция редких видов растений</a></li>
+              <li><a href="articles/article5.html">Воздействие вырубки лесов на водный баланс</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html">Деятельность</a>
+            <ul>
+              <li><a href="404.html">Планы работ</a></li>
+              <li><a href="404.html">Лесные аукционы</a></li>
+              <li><a href="404.html">Школьные и студенческие лесничества</a></li>
+              <li><a href="404.html">Отчёты и доклады о деятельности</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="index.html#contacts">Контакты</a>
+          </li>
+          <li>
+            <a href="404.html">Страница 404</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2025 Департамент лесного хозяйства</p>
+      <p>
+        <a href="index.html">Главная</a> |
+        <a href="sitemap.html">Карта сайта</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

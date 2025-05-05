@@ -856,3 +856,84 @@
     font-size: 0.95rem;
   }
 }
+
+  /* КАРТА САЙТА */
+   .section-sitemap {
+    padding: 3rem 0 4rem;
+  }
+
+  .section-sitemap h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    /* text-align: center; */
+    color: var(--color-primary-dark);
+    font-weight: 700;
+  }
+
+  .sitemap-struct {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem auto 0;
+    max-width: 1000px;
+    font-size: 1.11rem;
+    color: #333;
+  }
+
+  .sitemap-struct > li {
+    margin-bottom: 1.1rem;
+  }
+
+  .sitemap-struct > li > a,
+  .sitemap-struct > li > span {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    font-size: 1.13rem;
+    display: block;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .sitemap-struct > li > a:hover {
+    color: var(--color-accent);
+  }
+
+  .sitemap-struct ul {
+    list-style: disc;
+    padding-left: 1.4rem;
+    margin: 0.4rem 0 0.6rem;
+  }
+
+  .sitemap-struct ul li {
+    margin: 0.32rem 0;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+  }
+
+  .sitemap-struct ul li a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .sitemap-struct ul li a:hover {
+    color: var(--color-accent);
+  }
+
+  /* АДАПТИВ */
+  @media (max-width: 600px) {
+    .section-sitemap {
+      padding: 2rem 0 2.5rem;
+    }
+    .sitemap-struct {
+      font-size: 1rem;
+      padding-left: 0.2rem;
+    }
+    .section-sitemap h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+    }
+  }
