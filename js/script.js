@@ -28,4 +28,23 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', checkDesktopMenu);
     checkDesktopMenu();
   }
+
+    // Версия для слабовидящих
+    const accessibilityToggleTop = document.getElementById('accessibilityToggleTop');
+    if (accessibilityToggleTop) {
+      accessibilityToggleTop.addEventListener('click', function () {
+        document.body.classList.toggle('visually-impaired');
+        if (document.body.classList.contains('visually-impaired')) {
+          localStorage.setItem('visuallyImpaired', 'yes');
+          this.textContent = 'Версия стандартная';
+        } else {
+          localStorage.removeItem('visuallyImpaired');
+          this.textContent = 'Версия для слабовидящих';
+        }
+      });
+      if (localStorage.getItem('visuallyImpaired') === 'yes') {
+        document.body.classList.add('visually-impaired');
+        accessibilityToggleTop.textContent = 'Версия стандартная';
+      }
+    }
 });

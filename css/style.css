@@ -937,3 +937,270 @@
       margin-bottom: 1.2rem;
     }
   }
+
+  /* СТИЛИ ДЛЯ СЛАБОВИДЯЩИХ */
+  body.visually-impaired {
+    --color-bg: #fff !important;
+    --color-text: #111 !important;
+    --color-link: #005cb2 !important;
+    --color-link-hover: #d12d2d !important;
+    --color-accent: #005cb2 !important;
+    --color-section-1: #f5f7fa !important;
+    --color-section-2: #eef2f5 !important;
+    --color-footer-bg: #f2f3f5 !important;
+
+    background: var(--color-bg) !important;
+    color: var(--color-text) !important;
+    font-size: 22px !important;
+    line-height: 2 !important;
+    font-family: Arial, Verdana, sans-serif !important;
+    letter-spacing: 0.03em;
+  }
+
+  body.visually-impaired * {
+    box-shadow: none !important;
+    border-color: transparent !important;
+  }
+
+  body.visually-impaired h1, body.visually-impaired h2,
+  body.visually-impaired h3, body.visually-impaired h4,
+  body.visually-impaired h5, body.visually-impaired h6 {
+    color: var(--color-text) !important;
+    font-family: Arial, Verdana, sans-serif !important;
+    font-weight: bold !important;
+    margin-bottom: 1.2em !important;
+  }
+
+  body.visually-impaired a,
+  body.visually-impaired .btn-primary {
+    color: var(--color-link) !important;
+    text-decoration: underline !important;
+    background: none !important;
+    font-weight: 600 !important;
+    border: none !important;
+    outline: none !important;
+  }
+
+  body.visually-impaired a:hover,
+  body.visually-impaired .btn-primary:hover {
+    color: var(--color-link-hover) !important;
+    background: none !important;
+  }
+
+  body.visually-impaired .contact-phone,
+  body.visually-impaired .contact-email a {
+    color: #005cb2 !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+  }
+
+  body.visually-impaired .logo {
+    color: var(--color-link) !important;
+    background: none !important;
+    text-shadow: none !important;
+    border: 1.5px solid #005cb2 !important;
+    border-radius: 6px !important;
+    padding: 0.18em 0.6em !important;
+  }
+
+  body.visually-impaired .nav-list a,
+  body.visually-impaired .dropdown-btn,
+  body.visually-impaired .top-bar a,
+  body.visually-impaired .top-bar-btn,
+  body.visually-impaired .btn-primary {
+    border: 1.5px solid #005cb2 !important;
+    border-radius: 5px !important;
+    padding: 0.35em 1em !important;
+    background: #fff !important;
+    color: #005cb2 !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    margin: 0 0.2em !important;
+    display: inline-block !important;
+    transition: border 0.2s, color 0.2s, background 0.2s;
+  }
+
+  body.visually-impaired .footer-container a {
+    border: 1.5px solid #005cb2 !important;
+    border-radius: 5px !important;
+    padding: 0.35em 1em !important;
+    background: #fff !important;
+    color: #005cb2 !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    margin: 0 0.25em !important;
+    display: inline-block !important;
+  }
+  body.visually-impaired .footer-container a:hover {
+    color: #d12d2d !important;
+    border-color: #d12d2d !important;
+    background: #f9f9f9 !important;
+  }
+
+  body.visually-impaired .nav-list a:hover,
+  body.visually-impaired .dropdown-btn:hover,
+  body.visually-impaired .top-bar a:hover,
+  body.visually-impaired .top-bar-btn:hover,
+  body.visually-impaired .btn-primary:hover {
+    color: #d12d2d !important;
+    border-color: #d12d2d !important;
+    background: #f9f9f9 !important;
+  }
+
+  body.visually-impaired .news-item,
+  body.visually-impaired .article-card,
+  body.visually-impaired .contact-item {
+    border: 1.5px solid #bbb !important;
+    border-radius: 6px !important;
+    background: #fff !important;
+    color: #111 !important;
+    padding: 1em !important;
+    margin-bottom: 1.1em !important;
+    box-shadow: none !important;
+  }
+
+  body.visually-impaired .contact-item a {
+    border: 1.2px solid #005cb2 !important;
+    border-radius: 5px !important;
+    padding: 0.14em 0.7em !important;
+    margin: 0 0.13em !important;
+    background: #fff !important;
+    color: #005cb2 !important;
+    text-decoration: underline !important;
+    display: inline-block !important;
+    font-weight: bold !important;
+    transition: border 0.2s, color 0.2s, background 0.2s;
+  }
+  body.visually-impaired .contact-item a:hover,
+  body.visually-impaired .contact-phone:hover,
+  body.visually-impaired .contact-email a:hover {
+    color: #d12d2d !important;
+    border-color: #d12d2d !important;
+    background: #f9f9f9 !important;
+  }
+
+  body.visually-impaired .container,
+  body.visually-impaired nav,
+  body.visually-impaired main,
+  body.visually-impaired .section-404,
+  body.visually-impaired .section-sitemap {
+    background: var(--color-bg) !important;
+    color: var(--color-text) !important;
+    border: none !important;
+  }
+
+  /* Чередование фона */
+  body.visually-impaired .site-header,
+  body.visually-impaired .top-bar,
+  body.visually-impaired .main-nav {
+    background: var(--color-section-1) !important;
+    background-color: var(--color-section-1) !important;
+    color: var(--color-link) !important;
+    border-bottom: 1.5px solid #e4e8ef !important;
+    margin-bottom: 0.1em !important;
+  }
+  body.visually-impaired .section-news {
+    background: var(--color-section-2) !important;
+    background-color: var(--color-section-2) !important;
+    border-bottom: 1.5px solid #e4e8ef !important;
+    margin-bottom: 0.1em !important;
+  }
+  body.visually-impaired .section-articles {
+    background: var(--color-section-1) !important;
+    background-color: var(--color-section-1) !important;
+    border-bottom: 1.5px solid #e4e8ef !important;
+    margin-bottom: 0.1em !important;
+  }
+  body.visually-impaired .section-contacts {
+    background: var(--color-section-2) !important;
+    background-color: var(--color-section-2) !important;
+    border-bottom: 1.5px solid #e4e8ef !important;
+    margin-bottom: 0.1em !important;
+  }
+  body.visually-impaired .site-footer {
+    background: var(--color-footer-bg) !important;
+    background-color: var(--color-footer-bg) !important;
+    color: #111 !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+  }
+  body.visually-impaired .section-news,
+  body.visually-impaired .section-articles,
+  body.visually-impaired .section-contacts {
+    padding-top: 3.2rem !important;
+    padding-bottom: 3.2rem !important;
+  }
+  body.visually-impaired .nav-list,
+  body.visually-impaired .nav-list a,
+  body.visually-impaired .dropdown-btn {
+    background: var(--color-section-1) !important;
+    background-color: var(--color-section-1) !important;
+    color: #005cb2 !important;
+  }
+
+  /* Hero background чб */
+  body.visually-impaired .hero,
+  body.visually-impaired .article-hero {
+    position: relative !important;
+    background-blend-mode: luminosity !important;
+  }
+  body.visually-impaired .hero::after,
+  body.visually-impaired .article-hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    filter: grayscale(100%) contrast(0.7);
+    opacity: 0.85;
+    z-index: 1;
+    pointer-events: none;
+  }
+  body.visually-impaired .hero *,
+  body.visually-impaired .article-hero * {
+    position: relative;
+    z-index: 2;
+    color: #111 !important;
+  }
+
+  body.visually-impaired img,
+  body.visually-impaired svg {
+    filter: grayscale(100%) contrast(0.7) !important;
+    opacity: 0.7 !important;
+    outline: none !important;
+    border-radius: 0 !important;
+  }
+
+  body.visually-impaired input,
+  body.visually-impaired textarea,
+  body.visually-impaired select {
+    background: #fff !important;
+    color: #111 !important;
+    border: 2px solid #005cb2 !important;
+    font-size: 1.15em !important;
+    padding: 0.6em !important;
+    border-radius: 5px !important;
+  }
+
+  body.visually-impaired a:focus,
+  body.visually-impaired button:focus,
+  body.visually-impaired input:focus,
+  body.visually-impaired select:focus,
+  body.visually-impaired textarea:focus {
+    outline: 3px dashed #d12d2d !important;
+    outline-offset: 2px !important;
+    background: #fafafa !important;
+    color: #111 !important;
+  }
+
+  body.visually-impaired p,
+  body.visually-impaired li,
+  body.visually-impaired ul,
+  body.visually-impaired ol {
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  body.visually-impaired p {
+    margin-bottom: 1.3em !important;
+  }
