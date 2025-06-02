@@ -1204,3 +1204,37 @@
   body.visually-impaired p {
     margin-bottom: 1.3em !important;
   }
+
+  body.visually-impaired .nav-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 48px !important;
+    height: 48px !important;
+    padding: 0 !important;
+    margin: 0.4em !important;
+    background: #fff !important;
+    border-radius: 8px !important;
+    border: 2px solid #005cb2 !important;
+    position: relative !important;
+  }
+
+  body.visually-impaired .nav-toggle:focus {
+    outline: 3px dashed #d12d2d !important;
+    outline-offset: 3px !important;
+    background: #f5f5f5 !important;
+  }
+
+  body.visually-impaired .nav-toggle .hamburger,
+  body.visually-impaired .nav-toggle .hamburger::before,
+  body.visually-impaired .nav-toggle .hamburger::after {
+    width: 28px !important;
+    height: 5px !important;
+    background-color: #005cb2 !important;
+    border-radius: 2px !important;
+  }
+
+  body.visually-impaired .nav-toggle span {
+    outline: none !important;
+    box-shadow: none !important;
+  }

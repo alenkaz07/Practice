@@ -1,0 +1,287 @@
+/* Общие стили */
+.account-body, body.account {
+  background: #f4f7fa;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #232323;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Центр */
+.account-container {
+  max-width: 420px;
+  margin: 60px auto 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(60,80,100,0.07);
+  padding: 2.2rem 2rem 2rem;
+}
+
+.account-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  color: #235d25;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.account-form label {
+  font-size: 1rem;
+  color: #456;
+  margin-bottom: 0.4rem;
+}
+
+.account-form input[type="text"],
+.account-form input[type="email"],
+.account-form input[type="password"] {
+  width: 100%;
+  padding: 0.7em 1em;
+  border-radius: 7px;
+  border: 1.4px solid #b6bfc9;
+  background: #f9fbfc;
+  font-size: 1.09em;
+  transition: border 0.22s;
+}
+.account-form input:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+.account-form .account-btn,
+.account-btn {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.9em 1.2em;
+  font-size: 1.09em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.19s;
+}
+.account-form .account-btn:hover,
+.account-btn:hover {
+  background: #235d25;
+}
+
+.account-form .form-link,
+.account-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #337c38;
+  text-decoration: underline;
+  font-size: 0.97em;
+  cursor: pointer;
+}
+.account-form .form-link:hover,
+.account-link:hover {
+  color: #ffb300;
+}
+
+/* Личный кабинет */
+.account-panel {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(60,80,100,0.09);
+  max-width: 580px;
+  margin: 60px auto 0;
+  padding: 2.2rem 2rem 2rem;
+}
+.account-panel h2 {
+  margin-bottom: 1.2rem;
+  color: #2e7d32;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.account-info {
+  margin-bottom: 1.6rem;
+}
+.account-info p {
+  font-size: 1.08em;
+  color: #444;
+  margin: 0.7em 0;
+}
+.account-info span {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+/* Админская панель пользователей */
+.admin-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.2rem;
+  background: #fff;
+}
+.admin-users-table th,
+.admin-users-table td {
+  padding: 0.8em 0.7em;
+  border: 1px solid #e7ecee;
+  text-align: left;
+  font-size: 1em;
+}
+.admin-users-table th {
+  background: #e8f5e9;
+  color: #205522;
+  font-weight: 600;
+}
+.admin-users-table tr:nth-child(even) {
+  background: #f8fafc;
+}
+.admin-users-table td.role-admin {
+  color: #d12d2d;
+  font-weight: bold;
+}
+.admin-users-table td.role-user {
+  color: #2e7d32;
+}
+.admin-users-table .admin-action-btn {
+  background: #ffb300;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  margin-right: 0.3em;
+  font-size: 0.99em;
+  transition: background 0.2s;
+}
+.admin-users-table .admin-action-btn:hover {
+  background: #e09b00;
+}
+
+/* Сообщения и алерты */
+.account-message {
+  background: #e8f5e9;
+  color: #205522;
+  padding: 0.95em 1em;
+  border-radius: 8px;
+  margin-bottom: 1.2em;
+  text-align: center;
+  font-size: 1em;
+}
+.account-message.error {
+  background: #ffebee;
+  color: #d12d2d;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+  .account-container,
+  .account-panel {
+    padding: 1.3rem 0.6rem 1.5rem;
+    max-width: 99vw;
+  }
+  .admin-users-table th,
+  .admin-users-table td {
+    padding: 0.7em 0.3em;
+    font-size: 0.93em;
+  }
+}
+
+.admin-container {
+  max-width: 650px;
+  margin: 3rem auto 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 #0002;
+  padding: 2.5rem 2rem 2rem;
+}
+h1, h2 { text-align: center; }
+#users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  background: #fafcff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px #0001;
+}
+#users-table th, #users-table td {
+  border: 1px solid #e2e7ee;
+  padding: 0.65em 0.5em;
+  text-align: left;
+}
+#users-table th {
+  background: #f5f7fa;
+  font-weight: 700;
+  color: #237333;
+}
+#users-table td.role-admin { color: #d12d2d; font-weight: 700;}
+#users-table td.role-moderator { color: #3169be; }
+#users-table td.role-staff { color: #e1a100;}
+#users-table td.role-user { color: #222; }
+
+/* Стиль формы создания пользователя */
+#create-user-form {
+  margin: 2rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  background: #f8fafb;
+  border-radius: 8px;
+  padding: 1.2em 1em;
+  box-shadow: 0 1px 4px #0001;
+}
+#create-user-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #29542e;
+  gap: 0.25em;
+}
+#create-user-form input,
+#create-user-form select {
+  padding: 0.55em;
+  border: 1.3px solid #cdd0d4;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 0.12em;
+}
+#create-user-form button {
+  margin-top: 0.8em;
+  padding: 0.7em 1.3em;
+  font-size: 1.04em;
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.19s;
+  cursor: pointer;
+}
+#create-user-form button:hover { background: #176d25; }
+
+#admin-msg {
+  min-height: 1.6em;
+  text-align: center;
+  color: #b0130f;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#logout-btn {
+  display: block;
+  margin: 1.5rem auto 0;
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px #0001;
+  transition: background 0.2s;
+}
+#logout-btn:hover { background: #c0392b; }
