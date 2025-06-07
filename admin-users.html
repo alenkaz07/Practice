@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пользователи (админ)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/account.css">
+</head>
+<body>
+    <!-- Верхняя панель -->
+    <div class="top-bar">
+      <div class="container top-bar-container">
+        <a href="sitemap.html">Карта сайта</a>
+        <button class="top-bar-btn" id="accessibilityToggleTop" aria-pressed="false" aria-label="Включить версию для слабовидящих">Версия для слабовидящих</button>
+        <span id="profile-nav"></span>
+      </div>
+    </div>
+  <!--Основная шапка -->
+ <header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">ЛесХоз</a>
+
+    <!-- Контакты в шапке -->
+    <div class="contacts-top">
+      <span class="contact-phone">+7 (495) 123-45-67</span>
+      <span class="contact-email">
+        <a href="mailto:info@leshoz.gov.ru">info@leshoz.gov.ru</a>
+      </span>
+    </div>
+
+    <!-- Бургер -->
+    <button class="nav-toggle" aria-label="Открыть меню" id="navToggle">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Навигация под шапкой -->
+<nav class="main-nav closed" id="mainNav">
+  <!-- <div class="container"> -->
+    <ul class="nav-list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="index.html#news">Новости</a></li>
+      <li><a href="index.html#articles">Статьи</a></li>
+
+      <li class="dropdown">
+        <a href="404.html" class="dropdown-btn">Деятельность</a>
+        <ul class="dropdown-content">
+          <li><a href="404.html">Планы работ</a></li>
+          <li><a href="404.html">Лесные аукционы</a></li>
+          <li><a href="404.html">Школьные и студенческие лесничества</a></li>
+          <li><a href="404.html">Отчёты и доклады о деятельности</a></li>
+        </ul>
+      </li>
+
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+  <!-- </div> -->
+</nav>
+  <div class="admin-container">
+    <h1>Пользователи сайта</h1>
+    <table id="users-table">
+      <!-- js заполнит -->
+    </table>
+
+    <h2>Создать нового пользователя</h2>
+    <form id="create-user-form">
+      <label>ФИО:
+        <input name="fullname" required>
+      </label>
+      <label>Email:
+        <input type="email" name="email" required>
+      </label>
+      <label>Пароль:
+        <input type="password" name="password" required>
+      </label>
+      <label>Роль:
+        <select name="role">
+          <option value="user">Пользователь</option>
+          <option value="staff">Сотрудник</option>
+          <option value="moderator">Модератор</option>
+          <option value="admin">Администратор</option>
+        </select>
+      </label>
+      <button type="submit">Создать</button>
+    </form>
+    <div id="admin-msg"></div>
+    <button id="logout-btn">Выйти</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2025 Департамент лесного хозяйства</p>
+      <p>
+        <a href="index.html">Главная</a> |
+        <a href="sitemap.html">Карта сайта</a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/admin-users.js"></script>
+</body>
+</html>

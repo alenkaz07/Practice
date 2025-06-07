@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ошибка 404 — Департамент лесного хозяйства</title>
+  <link rel="stylesheet" href="css/style.css" id="theme-link">
+</head>
+<body>
+  <!-- Верхняя панель -->
+  <div class="top-bar">
+    <div class="container top-bar-container">
+      <a href="sitemap.html">Карта сайта</a>
+      <button class="top-bar-btn" id="accessibilityToggleTop">Версия для слабовидящих</button>
+      <span id="profile-nav"></span>
+    </div>
+  </div>
+
+  <!-- ====== Основная шапка ====== -->
+ <header class="site-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo">ЛесХоз</a>
+
+    <!-- Контакты в шапке -->
+    <div class="contacts-top">
+      <span class="contact-phone">+7 (495) 123-45-67</span>
+      <span class="contact-email">
+        <a href="mailto:info@leshoz.gov.ru">info@leshoz.gov.ru</a>
+      </span>
+    </div>
+
+    <!-- Бургер> -->
+    <button class="nav-toggle" aria-label="Открыть меню" id="navToggle">
+      <span class="hamburger"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Навигация под шапклй -->
+<nav class="main-nav closed" id="mainNav">
+  <!-- <div class="container"> -->
+    <ul class="nav-list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="index.html#news">Новости</a></li>
+      <li><a href="index.html#articles">Статьи</a></li>
+
+      <li class="dropdown">
+        <a href="404.html" class="dropdown-btn">Деятельность</a>
+        <ul class="dropdown-content">
+          <li><a href="404.html">Планы работ</a></li>
+          <li><a href="404.html">Лесные аукционы</a></li>
+          <li><a href="404.html">Школьные и студенческие лесничества</a></li>
+          <li><a href="404.html">Отчёты и доклады о деятельности</a></li>
+        </ul>
+      </li>
+
+      <li><a href="index.html#contacts">Контакты</a></li>
+    </ul>
+  <!-- </div> -->
+</nav>
+
+<section class="section-404">
+  <div class="error-visual">
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+      <circle cx="60" cy="80" r="32" fill="#A5D6A7"/>
+      <rect x="53" y="80" width="14" height="30" rx="4" fill="#8D6E63"/>
+      <ellipse cx="60" cy="65" rx="36" ry="26" fill="#2E7D32"/>
+    </svg>
+  </div>
+  <div class="error-code">404</div>
+  <h1>Упс! Такой страницы нет <span style="font-size:1.2em;">🌲</span></h1>
+  <p>
+    Вы попали на поляну, где пока нет ни одной тропинки.<br>
+    Возможно, страница удалена или ещё только создаётся.<br>
+    <span style="color:#ffb300;">Но вы всегда можете вернуться в лес — на главную страницу!</span>
+  </p>
+  <a href="index.html" class="btn-primary">Вернуться домой</a>
+  <div class="hint">
+    Или воспользуйтесь <a href="sitemap.html">картой сайта</a> для поиска нужного раздела.
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2025 Департамент лесного хозяйства</p>
+      <p>
+        <a href="index.html">Главная</a> |
+        <a href="sitemap.html">Карта сайта</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
