@@ -216,8 +216,23 @@
     overflow: hidden;
   }
 
-  .main-nav.open {
-    max-height: 500px;
+   @media (max-width: 768px) {
+    .main-nav.open {
+      position: fixed !important;
+      top: 56px;
+      left: 0;
+      width: 100vw;
+      height: auto;
+      background: var(--color-primary, #2e7d32);
+      max-height: 450px;
+      overflow-y: auto;
+      z-index: 2000;
+      display: block;
+      animation: fadeInNav 0.25s;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+      box-shadow: 0 8px 20px rgba(30,60,60,0.15);
+    }
   }
 
   .main-nav .container {
